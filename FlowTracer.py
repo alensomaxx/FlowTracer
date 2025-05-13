@@ -3,16 +3,6 @@ import mediapipe as mp
 from ultralytics import YOLO
 import os
 
-import warnings
-import logging
-
-# Suppress TensorFlow and general logs
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-logging.getLogger('tensorflow').setLevel(logging.ERROR)
-
-# Suppress warnings
-warnings.filterwarnings('ignore')
-
 
 # Load your 1080p video
 input_video = "D:/CscamRepo/RepoScam/FlowTracer/video2.mp4" #paste the path of your video here
